@@ -1,6 +1,8 @@
+<!--Templete html para agregar card de manera dinamica con nuevos datos de ciudades-->
 <div class="container">
   <div class="card">
     <div class="card-header">
+      <!--estamos imprimeindo el valor que trae nuestro array asociado data-->
       <?php echo $data['id']."- ".$data['ciudades']; ?>
     </div>
     <div class="card-body">

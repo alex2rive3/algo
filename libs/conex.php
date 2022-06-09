@@ -1,6 +1,6 @@
 <?php
-error_reporting(E_ALL ^ E_NOTICE);
 
+//Datos de coneccion 
 function conectar() {
   $server="127.0.0.1";     //127.0.0.1
   $usuario="root";
@@ -18,9 +18,9 @@ function conectar() {
   }
 
 }
-function desconectar($enlace)
-{
-mysqli_close($enlace);
+//para detener la coneccion con la base de datos 
+function desconectar($enlace){
+  mysqli_close($enlace);
 }
 //desactivasmos warnings y notice
 error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING );

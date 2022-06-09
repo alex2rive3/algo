@@ -2,7 +2,7 @@
 if ($res){
 $data=mysqli_fetch_array($res);
 }
- ?>
+?>
 
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -28,11 +28,10 @@ $data=mysqli_fetch_array($res);
   <input class="form-control" type="text" name="email" value="<?php if ($data['email']){ echo $data['email'];} ?>"><br>
 
   <label class="form-control" for="ciudad_id">Ciudad</label><br>
-  <!--<input class="form-control" type="text" name="ciudad_id" value="<?php //if ($data['ciudad_id']){ echo $data['ciudad_id'];} ?>"><br>-->
   <select class="form-control" name="ciudad_id">
     <?php
-    while ($d=mysqli_fetch_array($ciudades))
-    {
+    //EN ESTE CASO VAMOS RELLENANDO EL SELECT CON LOS VALORES QUE SE PUEDEN ELEGIR DESDE LA BASE DE DATOS 
+    while ($d=mysqli_fetch_array($ciudades)){
       $sel='';
       if ($data['ciudad_id'] & ($d['id']==$data['ciudad_id']) )
         { $sel="selected='true'";}

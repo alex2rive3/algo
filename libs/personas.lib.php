@@ -3,10 +3,8 @@ function mostrarTodos($link) {
   $sql="SELECT * FROM personas order by id ";
   $resultado = mysqli_query($link, $sql);
   if ($resultado) {
-    // echo "<pre>";
-     return $resultado;
-      //printf("La selección devolvió %d filas.\n", mysqli_num_rows($resultado));
-    }
+    return $resultado;
+  }
 }
 function mostrarPorId($link,$id){
   $sql="SELECT * FROM personas WHERE id=".$id;
