@@ -10,10 +10,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="personas/index.php">Personas</a>
+            <a class="nav-link active" aria-current="page" href="../personas/index.php">Personas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ciudades/index.php">Ciudades</a>
+            <a class="nav-link" href="../ciudades/index.php">Ciudades</a>
           </li>
         <form class="d-flex" style="margin-left: 560px;">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">

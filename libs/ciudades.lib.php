@@ -14,13 +14,13 @@ function mostrarCiudad($link,$id){
     }
 }
 function agregarCiudad($link,$datos){
-  $sql='INSERT INTO ciudades(ciudad) values ("'.$datos['ciudad'] .'") ';
+  $sql='INSERT INTO ciudades (id, ciudades) values (null,"'.$datos['ciudad'] .'") ';
   $resultado = mysqli_query($link, $sql);
   if ($resultado) { return 1; } else { return 0; }
 
 }
 function editarCiudad($link,$datos){
-  $sql='update ciudades set ciudad="'.$datos['ciudad'].'" where id='.$datos['id'];  
+  $sql='update ciudades set ciudades="'.$datos['ciudad'].'" where id='.$datos['id'];  
   $resultado = mysqli_query($link, $sql);
   if ($resultado) { return 1; } else { return 0; }
 }

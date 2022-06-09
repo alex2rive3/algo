@@ -2,7 +2,7 @@
 
 //Datos de coneccion 
 function conectar() {
-  $server="127.0.0.1";     //127.0.0.1
+  $server="127.0.0.1:3366";     //127.0.0.1
   $usuario="root";
   $pass="";
   $bdatos="dw2_personas";

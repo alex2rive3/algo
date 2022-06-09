@@ -7,7 +7,7 @@
     </div>
     <div class="card-body">
         <a href="<?php echo "index.php?mod=edit&id=".$data["id"]; ?>" class="btn btn-warning"> <i class="ion-edit"></i> Editar</a>
-        <a href="<?php echo "index.php?mod=delecte&id=".$data["id"]; ?>" class="btn btn-danger"> <i class="ion-android-delete"></i> Borrar</a>
+        <a href="<?php echo "index.php?mod=delete&id=".$data["id"]; ?>" class="btn btn-danger"> <i class="ion-android-delete"></i> Borrar</a>
       </div>
       </div>
     </div>
