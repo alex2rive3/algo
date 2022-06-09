@@ -37,11 +37,11 @@ function borrarCiudad($link,$datos ){
   if ($resultado) { return 1; } else { return 0; }
 }
 function nombreCiudad($link,$id){
-   $sql="SELECT ciudad  FROM ciudades WHERE id=".$id;
+  $sql="SELECT ciudades FROM ciudades WHERE id=".$id;
   $resultado = mysqli_query($link, $sql);
   if ($resultado) {
     $d=mysqli_fetch_array($resultado);
-     return $d['ciudad'];
+      echo $d['ciudades'];
     }}
 
  ?>

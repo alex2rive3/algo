@@ -2,9 +2,9 @@
 error_reporting(E_ALL ^ E_NOTICE);
 
 function conectar() {
-  $server="127.0.0.1:3366";     //127.0.0.1
+  $server="127.0.0.1";     //127.0.0.1
   $usuario="root";
-  $pass="12345";
+  $pass="";
   $bdatos="dw2_personas";
   $enlace = mysqli_connect($server, $usuario, $pass, $bdatos);
 
@@ -22,5 +22,6 @@ function desconectar($enlace)
 {
 mysqli_close($enlace);
 }
-
+//desactivasmos warnings y notice
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING );
 ?>

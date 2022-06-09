@@ -1,12 +1,13 @@
 <?php
+//capturamos todas los datos de las personas guardadas en la base de datos 
 $res=mostrarTodos($link);
  ?>
- <h3>Personas</h3><a href="index.php?mod=new" class="btn btn-success">Nuevo</a>
+ <h3>Personas</h3><a href="index.php?mod=new" class="btn btn-success"><i class="ion-ios-personadd"></i>  Nuevo</a>
      <?php
+     //recuperamos los datos y los almacenamos en un array asociado
      while ($data=mysqli_fetch_array($res))
      {
+       //importamos el modulo encargado de mostrar los datos recuperados
        include 'card.vw.php';
-       //echo "<tr><td>".$data['cin'].
-       //"</td><td>".$data['apellido']."</td><td>".$data['nombre']."</td><td>".$data['fenac']."</td><td>".$data['email']."</td><td>".nombreCiudad($link,$data['ciudad_id'])."</td><td><a href='index.php?mod=edit&id=".$data["id"]."'>editar</a></td><td><a href='index.php?mod=delete&id=".$data["id"]."'>borrar</a></td></tr>";
      }
       ?>

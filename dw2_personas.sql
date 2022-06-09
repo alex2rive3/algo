@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1:3366
--- Tiempo de generación: 09-06-2022 a las 03:22:18
--- Versión del servidor: 10.4.11-MariaDB
--- Versión de PHP: 7.4.4
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 09-06-2022 a las 21:57:17
+-- Versión del servidor: 10.4.17-MariaDB
+-- Versión de PHP: 7.3.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -37,7 +37,9 @@ CREATE TABLE `ciudades` (
 --
 
 INSERT INTO `ciudades` (`id`, `ciudades`) VALUES
-(2, 'fram');
+(2, 'fram'),
+(3, 'encarnación '),
+(4, 'asunción ');
 
 -- --------------------------------------------------------
 
@@ -60,7 +62,9 @@ CREATE TABLE `personas` (
 --
 
 INSERT INTO `personas` (`id`, `cin`, `nombre`, `apellido`, `fenac`, `email`, `ciudad_id`) VALUES
-(1, '5621950', 'Alex', 'Rive', '2000-06-12', 'asldjfs@nose', 2);
+(1, '14785553', 'Alex', 'Rolin', '2000-06-12', 'asldjfs@nose', 2),
+(2, '32453423', 'Alex', 'Rive', '2001-06-21', 'algo@prueva', 3),
+(5, '35431321', 'ROLANDO', 'ROLI', '2004-01-12', 'nose@prueba', 4);
 
 --
 -- Índices para tablas volcadas
@@ -86,13 +90,13 @@ ALTER TABLE `personas`
 -- AUTO_INCREMENT de la tabla `ciudades`
 --
 ALTER TABLE `ciudades`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `personas`
 --
 ALTER TABLE `personas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
